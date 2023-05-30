@@ -12,6 +12,12 @@
     input-num-inference-steps(v-model="num_inference_steps")
     input-scheduler(v-model="scheduler")
     input-seed(v-model="seed")
+    input-init-image(
+      v-model:init-image="init_image"
+      v-model:prompt-strength="prompt_strength"
+      :width="width"
+      :height="height"
+    )
     section
       v-btn(
         @click="doSubmit"
@@ -46,7 +52,9 @@ export default {
       guidance_scale: useStorage('input-guidance_scale', 7),
       num_inference_steps: useStorage('input-num_inference_steps', 20),
       scheduler: useStorage('input-scheduler', 'K_EULER_ANCESTRAL'),
-      seed: useStorage('input-seed', null)
+      seed: useStorage('input-seed', null),
+      init_image: useStorage('input-init_image', null),
+      prompt_strength: useStorage('input-prompt_strength', 0.8)
     }
   },
   computed: {
@@ -59,7 +67,8 @@ export default {
         num_outputs: this.num_outputs,
         guidance_scale: this.guidance_scale,
         num_inference_steps: this.num_inference_steps,
-        scheduler: this.scheduler
+        scheduler: this.scheduler,
+        prompt_strength: this.prompt_strength
       }
       try {
         input.seed = parseInt(this.seed)
@@ -67,6 +76,7 @@ export default {
       } catch (e) {
         delete input.seed
       }
+      if (this.init_image) input.init_image = this.init_image
       return input
     },
     payload() {

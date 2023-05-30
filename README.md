@@ -12,7 +12,7 @@ Install dependencies:
 npm install
 ```
 
-Create a `.env` file and add your [Replicate API token](https://replicate.com/account/api-tokens) to it:
+Create an `.env` file and add your [Replicate API token](https://replicate.com/account/api-tokens) to it:
 
 ```
 NUXT_REPLICATE_API_KEY=r8_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx

@@ -4097,6 +4097,11 @@ slash@^4.0.0:
   resolved "https://registry.yarnpkg.com/slash/-/slash-4.0.0.tgz#2422372176c4c6c5addb5e2ada885af984b396a7"
   integrity sha512-3dOsAHXXUkQTpOYcoAxLIorMTp4gIQr5IW3iVb7A7lFIp0VHhnynm9izx6TssdrIcVIESAlVjtnO2K8bg+Coew==
 
+smartcrop@^2.0.5:
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/smartcrop/-/smartcrop-2.0.5.tgz#36828aead8823d20f6cb058819bca4d7480ece4b"
+  integrity sha512-aXoHTM8XlC51g96kgZkYxZ2mx09/ibOrIVLiUNOFozV/MHmFSgEr1/5CKVBoFD5vd+re2wSy0xra21CyjRITzA==
+
 smob@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/smob/-/smob-1.0.0.tgz#f4e7df1292dce83981ffc651b49a7823c4a4f77c"

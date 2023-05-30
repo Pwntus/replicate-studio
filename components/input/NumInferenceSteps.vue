@@ -7,6 +7,7 @@ section
     :min="1"
     :max="100"
     :step="1"
+    color="primary"
     hide-details
   )
     template(#append)
