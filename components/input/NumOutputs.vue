@@ -1,7 +1,6 @@
 <template lang="pug">
 section
-  .text-subtitle-1 Number of images
-  .text-subtitle-2 Number of images to output each time.
+  .text-subtitle-1.pb-3 Number of images
   v-item-group(
     v-model="proxy"
     mandatory

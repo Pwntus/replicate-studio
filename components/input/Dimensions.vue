@@ -1,7 +1,6 @@
 <template lang="pug">
 section.pb-0
-  .text-subtitle-1 Dimensions
-  .text-subtitle-2 Image width and height.
+  .text-subtitle-1.pb-3 Dimensions
   v-item-group(
     v-model="proxy"
     mandatory

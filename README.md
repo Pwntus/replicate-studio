@@ -1,42 +1,25 @@
-# Nuxt 3 Minimal Starter
+# Replicate Studio
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+AI art studio powered by [Replicate](https://replicate.com/).
+
+![Replicate Studio](./demo.jpg)
 
 ## Setup
 
-Make sure to install the dependencies:
+Install dependencies:
 
 ```bash
-# yarn
-yarn install
-
-# npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
-## Development Server
+Create a `.env` file and add your [Replicate API token](https://replicate.com/account/api-tokens) to it:
 
-Start the development server on `http://localhost:3000`
+```
+NUXT_REPLICATE_API_KEY=r8_xxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+```
+
+Start the studio on `http://localhost:3000`:
 
 ```bash
 npm run dev
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
